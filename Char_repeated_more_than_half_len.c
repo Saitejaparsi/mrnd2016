@@ -25,7 +25,6 @@ char repeat(char s[])
 			if (count > n / 2)
 				return s[i];
 		}
-		if (count < n / 2)
 			count = 1;
 	}
 	return '@';
