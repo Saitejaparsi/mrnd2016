@@ -54,7 +54,7 @@ int braces(char *p1, char *p2)
 		{
 			*(p1 + i) = *(p2 + j);
 		}
-		*(p1 + (i + n2)) = '\0';
+		*(p1 + (n1+ n2)) = '\0';
 	}
 	return 2;
 }
