@@ -75,7 +75,9 @@ void year(int y)
 	char y1[][19] = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
 	char y2[][8] = { "twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety" };
 	char y3[][20] = { "hundred", "thousand" };
-	if (y > 0 && y < 20)
+	if (y % 100 == 0)
+		printf("%s\t%s\t", y1[i - 1], y3[1]);
+	else if (y > 0 && y < 20)
 		printf("%s\t", y1[y - 1]);
 	else if (y > 19 && y < 100)
 	{
