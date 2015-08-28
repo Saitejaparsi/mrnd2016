@@ -84,10 +84,10 @@ void year(int y)
 		int i = y / 10;
 		printf("%s\t%s\t", y2[i - 2], y1[y % 10 - 1]);
 	}
-	else if (y > 99 && y < 999)
+	else if (y > 99 && y < 1000)
 	{
 		int i = y / 100;
-		printf("%s\t%s\t%s\t%s\t", y1[i - 1], y3[0], y2[y % 10 - 1], y1[(y % 10) - 1]);
+		printf("%s\t%s\t%s\t%s\t", y1[i - 1], y3[0], y2[(y/10 )% 10 - 2], y1[(y % 10) - 1]);
 	}
 	else if (y > 999 && y < 9999)
 	{
