@@ -8,7 +8,7 @@ void main()
 	scanf("%s", a);
 	printf("enter kth positon from last\t");
 	scanf("%d", &k);
-	if (k <= 0)
+	if (k <=0)
 		printf("invalid k value");
 	else
 	{
