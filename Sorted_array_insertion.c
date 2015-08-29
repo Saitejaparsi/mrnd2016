@@ -41,6 +41,12 @@ void sa(int a[], int e)
 						a[i] = e;
 					else
 						a[i + 1] = e;
+					if(a[1]<a[0])
+					{
+						int temp=a[0];
+						a[1]=a[0];
+						a[0]=temp;
+					}
 				}
 			}
 
